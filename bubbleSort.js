@@ -1,9 +1,9 @@
 arr = [45,3,98,5,102,33,40,6];
-var swapp;
+var swap;
 var n = arr.length-1;
 var x = arr;
 do {
-	swapp = false;
+	swap = false;
 	for (var i=0; i < n; i++)
 	{
 		if (x[i] > x[i+1])
@@ -11,9 +11,9 @@ do {
 		   var temp = x[i];
 		   x[i] = x[i+1];
 		   x[i+1] = temp;
-		   swapp = true;
+		   swap = true;
 		}
 	}
 	n--;
-} while (swapp);
+} while (swap);
 console.log(x);
